@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<h1>Créer un article</h1>
+
+	{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+	<div>
+		<p>
+			{{ form_row(form.title) }}</p>
+	</div>
+	<div>
+		<p>
+			{{ form_row(form.image) }}</p>
+	</div>
+	<div>
+		<p>
+			{{ form_row(form.content) }}</p>
+	</div>
+
+	<div>
+		<p>
+			{{ form_row(form.save) }}</p>
+	</div>
+
+
+	{{ form_end(form) }}
+
+{% endblock %}
